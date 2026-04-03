@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{
+            border: 1px solid black;
+            background-color: bisque;
+            width: 300px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            margin-top: 10px;
+        }
+        .tittle {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="#" method="get">
+    <div>
+        <h2 class="tittle">Đăng ký</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name"><br>
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday"><br>
+        </div>
+        <div>
+            <label for="birthday">Gender</label>
+            <input type="radio" id="gender1" name="gender" value="male">Male
+            <input type="radio" checked id="gender2" name="gender">Female<br>
+        </div>
+        <div>
+            <label>Subject</label>
+            <input type="checkbox" name="subjects" value="JAVA">Java
+            <input type="checkbox" name="subjects" value="JS">Javascript
+            <input type="checkbox" name="subjects" value="PHP">PHP
+        </div>
+        <div>
+            <label>Class name</label>
+            <select name="className">
+                <option>----Chọn----------</option>
+                <option value="c0225g1">C02</option>
+                <option value="c0235g1">C03</option>
+                <option value="c0245g1">C04</option>
+            </select>
+        </div>
+        <div>
+            <label>Note</label>
+            <textarea rows="4" name="note"></textarea>
+        </div>
+        <div>
+            <button>Send</button>
+            <button type="reset">Xoá thông tin</button>
+        </div>
+
+    </div>
+
+    <!--  <button></button>-->
+</form>
+</body>
+</html>
